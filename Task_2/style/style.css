@@ -1,0 +1,159 @@
+
+/* body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 150%;
+    background-image: url("https://content.admixer.net/test1/5175b556-ddbe-4cbf-ada1-5bbda17bf79d/fa02f288-e056-4d72-a1ed-bb2fd46beba0/img/branding.jpg");
+} */
+.main {
+    background-color: black;
+    width: fit-content;
+    position:fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top:0%;
+}
+
+.btn_main {
+    margin: 5px;
+    background-color: black;
+    color: white;
+}
+
+.btn_main:hover {color: orange;}
+
+.dropbtn {
+    background-color: black;
+    font-size: 150%;
+    color:gray;
+    border: none;
+    vertical-align:text-bottom;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+}
+
+.dropdown-content a {
+    color: black;
+    min-width: 200px;
+    padding: 3px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {color: orange;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {color: orange; background-color: white;}
+
+.btn_main_tariff {
+    margin: 5px;
+    margin-left: 100px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border-color: white;
+    border-radius: 5px;
+}
+.btn_main_tariff:hover {
+    color: orange;
+    border-color: orange;
+}
+.category{
+    margin: auto;
+    width:1100px;
+}
+.big_text{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 48px;
+}
+
+.menu{
+    margin: 0px 100px;
+}
+
+.menu_sellect{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.list{
+    border:none;
+    color:gray;
+}
+.list:hover {
+    color:orange;
+}
+.list_option{
+    color: gray;
+}
+.list_1{
+    float: right;
+    align-self: center;
+    border:none;
+    color:orange;
+}
+.object{
+    display:inline;
+}
+.object_item{
+    display:inline-block;
+    padding: 20px 10px;
+}
+.object_item:hover .name{
+    color: orange;
+}
+.object_item:hover .play{
+    display:inline;
+}
+.play{
+    position: absolute;
+    display: none;
+}
+.name{
+    color: black;
+    font-size: large;
+}
+.year{
+    margin: 5px 0 10px 0;
+    color: gray;
+    font-size: small;
+}
+.stock{
+    color: white;
+    font-size: small;
+    background-color: red;
+    border-radius: 5px;
+    padding: 2px 5px;
+    width: fit-content;
+    display: inline;
+}
+.subscription{
+    margin-left: 10px;
+    color: orange;
+    font-size: small;
+    width: fit-content;
+    display: inline;
+}
+.button_fixed{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    margin: 50px;
+    width: 50px;
+    height: 70px;
+    /* background-image: url('https://s8.vcdn.biz/static/f/4341658211/image.jpg/pt/r193x272x4'); */
+    background-image: url("../images/1.webp");
+    background-size:cover; 
+}

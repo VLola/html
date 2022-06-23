@@ -1,0 +1,20 @@
+ul li ul li ul li{
+    list-style-type: lower-latin;
+}
+ul li ul li{
+    list-style-type:decimal;
+}
+ul li{
+    list-style-type:upper-roman;
+}
+/* li{
+    color:dodgerblue;
+} */
+li {
+    color: black; /* Цвет маркеров */
+    font-weight: bold;
+   }
+   li span {
+    color: dodgerblue; /* Цвет текста */
+    font-weight:normal;
+   }
