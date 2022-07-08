@@ -1,0 +1,95 @@
+body {
+    background: url(../images/logo.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed
+}
+.div_main{
+    background-color: #f2f4f5;
+    width: 960px;
+    margin: auto;
+    margin-top: 250px;
+}
+.div_main_title{
+    text-align: center;
+    font-size: 36px;
+    padding: 25px;
+}
+.div_container{
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; */
+    /* align-content: center; */
+    /* justify-content: center; */
+}
+.div_item{
+    background-color: white;
+    width: 200px;
+    height: 270px;
+    padding: 10px;
+    margin: 10px;
+}
+.div_item_name{
+    margin-top: 10px;
+    height: 60px;
+}
+span{
+    font-size: medium;
+    text-decoration: none;
+    color:black;
+    display:inline;
+}
+span:hover{
+    color:white;
+    background-color: #002f34;
+    cursor: pointer; 
+}
+.div_item_image{
+    display: grid;
+}
+.div_item_image:hover{
+    cursor: pointer; 
+}
+.div_item_image img{
+    width: 200px;
+    height: 150px;
+}
+.div_item_sity{
+    font-size: small;
+    color: grey;
+    height: 25px;
+    display: flex;
+    align-items:flex-end;
+}
+.div_item_price{
+    font-size: medium;
+    font-size: 20px;
+    font-weight: bold;
+    display:inline;
+    float: left;
+}
+.div_item_like{
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/heart_gray.png);
+    display:inline;
+    float: right;
+}
+.div_item_like:hover{
+    background-image: url(../images/heart_black.png);
+    cursor: pointer; 
+}
+.div_item_like:hover .div_item_like_blue{
+    display: block;
+}
+.div_item_like_blue{
+    width: 136px;
+    height: 59px;
+    background-image: url(../images/like.png);
+    margin-left: -25px;
+    margin-top: -60px;
+    position: absolute;
+    display: none;
+}
