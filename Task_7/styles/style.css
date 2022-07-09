@@ -5,15 +5,23 @@ body {
     background-attachment: fixed
 }
 .div_main{
-    background-color: #f2f4f5;
     width: 960px;
     margin: auto;
     margin-top: 250px;
 }
+.div_background_gray{
+    background-color: #f2f4f5;
+}
+.div_background_white{
+    background-color: white;
+    padding-bottom: 25px;
+}
 .div_main_title{
     text-align: center;
-    font-size: 36px;
+    font-size: 32px;
+    font-weight:600;
     padding: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .div_container{
     display: flex;
@@ -64,7 +72,6 @@ span:hover{
     align-items:flex-end;
 }
 .div_item_price{
-    font-size: medium;
     font-size: 20px;
     font-weight: bold;
     display:inline;
@@ -92,4 +99,17 @@ span:hover{
     margin-top: -60px;
     position: absolute;
     display: none;
+}
+.div_category{
+    margin: 5px;
+    width: 96.6px;
+    height: 150px;
+    text-align: center;
+}
+.div_category:hover{
+    cursor: pointer;
+}
+.div_category:hover span{
+    color:white;
+    background-color: #002f34;
 }
