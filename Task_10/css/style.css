@@ -1,0 +1,406 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.div__main {
+  width: 92%;
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+}
+
+.div__buttons_top {
+  margin-block: 20px;
+  text-align: center;
+}
+
+.img__button-logo {
+  padding-right: 30px;
+  width: 120px;
+  height: 35px;
+  margin: 0 5px;
+}
+
+.img__button-logo:hover {
+  cursor: pointer;
+}
+
+.div__dropdown {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  display: inline-block;
+}
+
+.a__button-dropdown {
+  background-color: white;
+  display: inline-block;
+  overflow: hidden;
+  border: none;
+  padding-right: 20px;
+}
+
+.a__button-dropdown:hover {
+  color: #0000ff;
+}
+
+.div__content-dropdown {
+  display: none;
+  position: absolute;
+  background-color: white;
+  z-index: 2;
+}
+
+.div__content-dropdown a:hover {
+  color: #0000ff;
+}
+
+.div__dropdown:hover .div__content-dropdown {
+  display: block;
+}
+
+.div__main-buttons {
+  display: inline-block;
+  overflow: hidden;
+  margin-right: 5%;
+  margin-block: 2px;
+}
+
+.a__button_color_blue {
+  color: #0000ff;
+}
+
+.a__button_color_blue:hover {
+  color: #000000;
+}
+
+.a__button {
+  color: #000000;
+}
+
+.img__button {
+  width: 30px;
+  height: 30px;
+  padding: 0 5px;
+}
+
+.img__button:hover {
+  cursor: pointer;
+}
+
+.div__buttons_bottom {
+  margin-block: 20px;
+  border-radius: 15px;
+  padding: 25px 10px;
+  position: relative;
+  background-color: #f2f2f2;
+}
+
+.div__button_bottom:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.button__category {
+  width: 14%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.div__line {
+  width: 14%;
+  height: 4px;
+  margin-top: 22px;
+  margin-left: -6px;
+  position: absolute;
+}
+
+.div__line-bg-color {
+  width: 100%;
+  background-color: mediumslateblue;
+  height: 100%;
+  position: absolute;
+  display: none;
+}
+
+.button__category:hover .div__line-bg-color {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: line__animation;
+          animation-name: line__animation;
+  display: block;
+}
+
+.div__info {
+  width: 100%;
+  overflow: hidden;
+}
+
+.div__info-images {
+  display: flex;
+  width: 400%;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-name: info__animation;
+          animation-name: info__animation;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.div__info-image {
+  width: 25%;
+}
+
+.div__info-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.div__categorys {
+  width: 100%;
+  display: flex;
+  margin-block: 20px;
+}
+
+.div__category {
+  width: 25%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  margin: 1%;
+  background-color: #26242e;
+  border-radius: 2%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.div__category-name {
+  width: 21%;
+  max-width: 300px;
+  color: white;
+  position: absolute;
+  text-align: center;
+  margin-top: 3%;
+  font-size: 180%;
+}
+
+.div__category img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: margin 0.4s ease-in-out;
+}
+
+.div__category:hover {
+  background-color: #fed330;
+  cursor: pointer;
+}
+
+.div__category:hover img {
+  margin-top: 6%;
+}
+
+.div__category:hover .div__category-name {
+  color: #000000;
+}
+
+.div__title {
+  margin-top: 35px;
+  font-size: 300%;
+}
+
+.div__items {
+  padding-block: 25px;
+}
+
+.div__item {
+  display: inline-block;
+  width: 32%;
+  min-width: 400px;
+  aspect-ratio: 8/5;
+  margin: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2%;
+}
+
+.div__item:hover {
+  border-color: white;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.3s linear;
+}
+
+.div__item-container_left {
+  display: block;
+  width: 55%;
+  height: 100%;
+  float: left;
+}
+
+.div__item-container_right {
+  width: 45%;
+  height: 100%;
+  float: right;
+  position: relative;
+}
+
+.div_item-name {
+  height: 30%;
+  margin: 18% 10%;
+  font-size: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.div_item-name:hover {
+  cursor: pointer;
+  color: #756aff;
+}
+
+.div__item-price {
+  height: 20%;
+  margin: 0 10%;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.div__item-price:hover {
+  cursor: default;
+}
+
+.div__item-price span {
+  font-size: small;
+}
+
+.button__item {
+  background-color: #fed330;
+  margin: 0 10%;
+  padding: 3% 10%;
+  border-radius: 20px;
+  border: 0;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button__item:hover {
+  color: white;
+  background-color: #f94e4e;
+  cursor: pointer;
+}
+
+.img__item-image {
+  display: block;
+  margin: 15% 5%;
+  width: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img__item-image:hover {
+  cursor: pointer;
+}
+
+.div__icon-noveltie {
+  width: 90%;
+  padding: 5px;
+  position: absolute;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #6a5eff;
+  text-align: right;
+}
+
+@-webkit-keyframes line__animation {
+  0% {
+    width: 0%;
+    margin-left: 50%;
+  }
+  100% {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+
+@keyframes line__animation {
+  0% {
+    width: 0%;
+    margin-left: 50%;
+  }
+  100% {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+@-webkit-keyframes info__animation {
+  0% {
+    margin-left: 0%;
+  }
+  1% {
+    margin-left: 0%;
+  }
+  25% {
+    margin-left: 0%;
+  }
+  26% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -100%;
+  }
+  51% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -200%;
+  }
+  76% {
+    margin-left: -300%;
+  }
+  99% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
+@keyframes info__animation {
+  0% {
+    margin-left: 0%;
+  }
+  1% {
+    margin-left: 0%;
+  }
+  25% {
+    margin-left: 0%;
+  }
+  26% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -100%;
+  }
+  51% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -200%;
+  }
+  76% {
+    margin-left: -300%;
+  }
+  99% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}/*# sourceMappingURL=style.css.map */
