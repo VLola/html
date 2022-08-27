@@ -2,6 +2,7 @@
 
 $color-blue: #0000ff
 $color-black: #000000
+$color-white: #fff
 $color-light-gray: #f2f2f2
 $color-gray: #26242e
 $color-yellow: #fed330
@@ -9,12 +10,16 @@ $color-light-violet: #756aff
 $color-violet: #6a5eff
 $color-pink: #f94e4e
 $color-border: rgba(0,0,0,.1)
+$color-green: #0aaab4
+$color-footer: #1b1b1b
+
 body
     font-family: Arial, Helvetica, sans-serif
     font-size: 14px
 
-a
-    @include mixin-a
+.div__main a
+    margin: 0 10px
+    text-decoration: none
     color: $color-black
 
 .div__main
@@ -214,7 +219,7 @@ a
 
 .div_item-name
     height: 30%
-    margin: 18% 10%
+    margin: 18% 0 10% 10%
     font-size: 20px
     transition: color 0.3s ease-in-out
 
@@ -223,16 +228,28 @@ a
     color: $color-light-violet
 
 .div__item-price
-    height: 20%
-    margin: 0 10%
-    font-size: x-large
-    font-weight: bold
+    display: flex
+    flex-flow: column
+    height: 50px
+    margin: 0 0 8% 10%
 
 .div__item-price:hover
     cursor: default
 
 .div__item-price span
     font-size: small
+
+.div__item-old-price
+    margin: auto auto 0 0
+    text-decoration: line-through
+    font-size: 14px
+    font-weight: 300
+    opacity: 0.5
+
+.div__item-new-price
+    bottom: 0
+    font-size: x-large
+    font-weight: bold
 
 .button__item
     background-color: $color-yellow
@@ -259,14 +276,88 @@ a
     cursor: pointer
 
 .div__icon-noveltie
-    width: 90%
-    padding: 5px
+    @include mixin-icon
+    color: $color-violet
+
+.div__icon-popular
+    @include mixin-icon
+    color: $color-green
+
+.div__icon-stock
+    background-color: red
+    width: 23%
+    top: 3%
+    right: 4%
+    padding: 8px
     position: absolute
     font-size: 14px
     font-weight: 900
-    text-transform: uppercase
-    color: $color-violet
-    text-align: right
+    color: $color-white
+    text-align: center
+    border-radius: 5px
+
+.div__icon-stock_tail
+    position: absolute
+    left: 0px
+    border: 8px solid transparent
+    border-left: 8px solid red
+
+.div__footer
+    background-color: $color-footer
+
+.div__footer-center
+    width: 92%
+    max-width: 1300px
+    margin: auto
+    padding-block: 30px
+
+.div__footer-table
+    display: flex
+    flex-flow: row
+
+.div__column
+    width: 25%
+
+.div__contact
+    display: flex
+    flex-flow: column
+    padding-block: 20px
+
+.div__contact a
+    @include mixin-a-footer
+    font-weight: bold
+
+.div__footer-center a:hover
+    color: $color-yellow
+
+.a__footer-text
+    @include mixin-a-footer
+    font-size: small
+
+.div__footer-text
+    color: $color-white
+    font-size: x-small
+    padding-top: 70px
+
+.div__buyer
+    color: $color-white
+    font-size: medium
+    font-weight: bold
+
+.div__buyer-table
+    display: flex
+    flex-flow: column
+    padding-block: 20px
+
+.div__buyer-table a
+    @include mixin-a-footer
+
+.div__buyer-text
+    color: $color-white
+
+.div__buyer-text_bold
+    color: $color-white
+    font-weight: bold
 
 @keyframes line__animation
     0%

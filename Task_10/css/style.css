@@ -3,7 +3,7 @@ body {
   font-size: 14px;
 }
 
-a {
+.div__main a {
   margin: 0 10px;
   text-decoration: none;
   color: #000000;
@@ -254,7 +254,7 @@ a {
 
 .div_item-name {
   height: 30%;
-  margin: 18% 10%;
+  margin: 18% 0 10% 10%;
   font-size: 20px;
   transition: color 0.3s ease-in-out;
 }
@@ -265,10 +265,10 @@ a {
 }
 
 .div__item-price {
-  height: 20%;
-  margin: 0 10%;
-  font-size: x-large;
-  font-weight: bold;
+  display: flex;
+  flex-flow: column;
+  height: 50px;
+  margin: 0 0 8% 10%;
 }
 
 .div__item-price:hover {
@@ -277,6 +277,20 @@ a {
 
 .div__item-price span {
   font-size: small;
+}
+
+.div__item-old-price {
+  margin: auto auto 0 0;
+  text-decoration: line-through;
+  font-size: 14px;
+  font-weight: 300;
+  opacity: 0.5;
+}
+
+.div__item-new-price {
+  bottom: 0;
+  font-size: x-large;
+  font-weight: bold;
 }
 
 .button__item {
@@ -314,9 +328,128 @@ a {
   position: absolute;
   font-size: 14px;
   font-weight: 900;
-  text-transform: uppercase;
-  color: #6a5eff;
   text-align: right;
+  color: #6a5eff;
+}
+
+.div__icon-popular {
+  width: 90%;
+  padding: 5px;
+  position: absolute;
+  font-size: 14px;
+  font-weight: 900;
+  text-align: right;
+  color: #0aaab4;
+}
+
+.div__icon-stock {
+  background-color: red;
+  width: 23%;
+  top: 3%;
+  right: 4%;
+  padding: 8px;
+  position: absolute;
+  font-size: 14px;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.div__icon-stock_tail {
+  position: absolute;
+  left: 0px;
+  border: 8px solid transparent;
+  border-left: 8px solid red;
+}
+
+.div__footer {
+  background-color: #1b1b1b;
+}
+
+.div__footer-center {
+  width: 92%;
+  max-width: 1300px;
+  margin: auto;
+  padding-block: 30px;
+}
+
+.div__footer-table {
+  display: flex;
+  flex-flow: row;
+}
+
+.div__column {
+  width: 25%;
+}
+
+.div__contact {
+  display: flex;
+  flex-flow: column;
+  padding-block: 20px;
+}
+
+.div__contact a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-decoration: none;
+  padding-block: 4px;
+  color: #fff;
+  transition: color 0.1s ease-in-out;
+  font-weight: bold;
+}
+
+.div__footer-center a:hover {
+  color: #fed330;
+}
+
+.a__footer-text {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-decoration: none;
+  padding-block: 4px;
+  color: #fff;
+  transition: color 0.1s ease-in-out;
+  font-size: small;
+}
+
+.div__footer-text {
+  color: #fff;
+  font-size: x-small;
+  padding-top: 70px;
+}
+
+.div__buyer {
+  color: #fff;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.div__buyer-table {
+  display: flex;
+  flex-flow: column;
+  padding-block: 20px;
+}
+
+.div__buyer-table a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-decoration: none;
+  padding-block: 4px;
+  color: #fff;
+  transition: color 0.1s ease-in-out;
+}
+
+.div__buyer-text {
+  color: #fff;
+}
+
+.div__buyer-text_bold {
+  color: #fff;
+  font-weight: bold;
 }
 
 @-webkit-keyframes line__animation {
