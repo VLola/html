@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link   href="css/style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+  <div class="div__top">
+    <div class="div__top-content">
+      <div class="div__site-name">Booking.com</div>
+      <div class="div__buttons">
+        <div class="div__button-top">
+          <div class="div__text_center">UAH</div>
+        </div>
+        <div class="div__button-top">
+          <img class="img__language" src="./images/ukraine.png"/>
+        </div>
+        <div class="div__button-top">
+          <div class="div__question">?</div>
+        </div>
+        <button class="button__border_white">Зареєструвати своє помешкання</button>
+        <button class="button__login">Зареєструватися</button>
+        <button class="button__login">Увійти</button>
+      </div>
+    </div>
+  </div>
+  <div class="div__category">
+      <div class="div__text_blue">Головна</div>
+      <div class="div__text">›</div>
+      <div class="div__text_blue">Украина</div>
+      <div class="div__text">›</div>
+      <div class="div__text_blue">Ивано-Франковск</div>
+      <div class="div__text">›</div>
+      <div class="div__text_blue">Буковель</div>
+      <div class="div__text">›</div>
+      <div class="div__text_black">Результаты поиска</div>
+  </div>
+  <div class="div__main">
+    <div class="div_left">
+      <div class="div__search">
+        <div class="div__search-text_bold">Шукати</div>
+        <div class="div__search-text_normal">Місце / назва помешкання:</div>
+        <input class="input__search" style="background-image: url(./images/search.png);" type="text"></input>
+        <div class="div__search-text_normal">Дата заїзду</div>
+        <input class="input__search" style="background-image: url(./images/data-1.png);" type="date"></input>
+        <div class="div__search-text_normal">Дата виїзду</div>
+        <input class="input__search" style="background-image: url(./images/data-2.png);" type="date"></input>
+        <div class="div__search-text_normal">Термін перебування: 1 ніч</div>
+        <select class="select__search">
+          <option value="">2 дорослих - 0 дітей - 1 номер</option>
+        </select>
+        <div class="div__search-footer">
+          <div class="div__search-checkbox">
+            <input type="checkbox">Я подорожую у справах</input>
+          </div>
+          <div class="div__search-question">?</div>
+        </div>
+        <button class="button__search">Шукати</button>
+      </div>
+      <div class="div__filter">
+        <div class="div__filter-item">
+          <div class="div__name-filter-text">
+            Сортувати за такими критеріями:
+          </div>
+        </div>
+        <div class="div__filter-item">
+          <div class="div__filter-text_bold">
+            Ваш бюджет (за ніч)
+          </div>
+          <label class="label__filter-checkbox toggler-style">
+            <div class="div__name-filter-checkbox">Встановити свій бюджет</div>
+            <input type="checkbox" />
+            <div class="toggler-slider">
+              <div class="toggler-knob"></div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">UAH 0 - UAH 2 000</div>
+              <div class="div__count-filter">81</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">UAH 2 000 - UAH 4 000</div>
+              <div class="div__count-filter">49</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">UAH 4 000 - UAH 6 000</div>
+              <div class="div__count-filter">18</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">UAH 6 000 - UAH 8 000</div>
+              <div class="div__count-filter">10</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">UAH 8 000 - UAH 10 000</div>
+              <div class="div__count-filter">3</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">UAH 10 000 - UAH 12 000</div>
+              <div class="div__count-filter">4</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Понад UAH 12 000</div>
+              <div class="div__count-filter">3</div>
+            </div>
+          </label>
+        </div>
+
+        <div class="div__filter-item">
+          <div class="div__filter-text_bold">
+            Популярні фільтри
+          </div>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Сніданок включено</div>
+              <div class="div__count-filter">53</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Оздоровчий спа-центр</div>
+              <div class="div__count-filter">25</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Критий плавальний басейн</div>
+              <div class="div__count-filter">28</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Гідромасажна ванна/джакузі</div>
+              <div class="div__count-filter">20</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Чудово: 9+</div>
+              <div class="div__count-filter">40</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Спа-процедури</div>
+              <div class="div__count-filter">13</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">4 зірки</div>
+              <div class="div__count-filter">8</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Басейн</div>
+              <div class="div__count-filter">50</div>
+            </div>
+          </label>
+        </div>
+
+        <div class="div__filter-item">
+          <div class="div__filter-text_bold">
+            Здоров'я та безпека
+          </div>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Помешканняб що вживають заходів для захисту здоров'я і безпеки</div>
+              <div class="div__count-filter">69</div>
+            </div>
+          </label>
+        </div>
+
+        <div class="div__filter-item">
+          <div class="div__filter-text_bold">
+            Ековідповідальність
+          </div>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Ековідповідальність помешкання</div>
+              <div class="div__count-filter">6</div>
+            </div>
+          </label>
+        </div>
+
+        <div class="div__filter-item">
+          <div class="div__filter-text_bold">
+            Кількість зірок
+          </div>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">3 зірки</div>
+              <div class="div__count-filter">24</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">4 зірки</div>
+              <div class="div__count-filter">8</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">5 зірки</div>
+              <div class="div__count-filter">1</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Без зіркової категорії</div>
+              <div class="div__count-filter">63</div>
+            </div>
+          </label>
+        </div>
+
+        <div class="div__filter-item">
+          <div class="div__filter-text_bold">
+            Буковель - відстань від центру
+          </div>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">До 1 км</div>
+              <div class="div__count-filter">47</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">До 3 км</div>
+              <div class="div__count-filter">82</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">До 5 км</div>
+              <div class="div__count-filter">90</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Без зіркової категорії</div>
+              <div class="div__count-filter">63</div>
+            </div>
+          </label>
+        </div>
+
+        <div class="div__filter-item">
+          <div class="div__filter-text_bold">
+            Як провести вільний час
+          </div>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Катання на лижах</div>
+              <div class="div__count-filter">79</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Сауна</div>
+              <div class="div__count-filter">59</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Піші прогулянки</div>
+              <div class="div__count-filter">53</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Велоспорт</div>
+              <div class="div__count-filter">36</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Піші екскурсії</div>
+              <div class="div__count-filter">34</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Критий плавальний басейн</div>
+              <div class="div__count-filter">28</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Оздоровчий спа-центр</div>
+              <div class="div__count-filter">25</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Гідромасажна ванна/джакузі</div>
+              <div class="div__count-filter">20</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Спа-лаунж/зона для релаксації</div>
+              <div class="div__count-filter">18</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Хамам/турецька лазня</div>
+              <div class="div__count-filter">16</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Спа-процедури</div>
+              <div class="div__count-filter">13</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Масаж всього тіла</div>
+              <div class="div__count-filter">10</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Масаж рук</div>
+              <div class="div__count-filter">8</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Лазні на відкритому повітрі</div>
+              <div class="div__count-filter">5</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Пакети послуг спа / велнес</div>
+              <div class="div__count-filter">3</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Педикюр</div>
+              <div class="div__count-filter">2</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Пляж</div>
+              <div class="div__count-filter">2</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Похід барами (пабкрол)</div>
+              <div class="div__count-filter">2</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Приватна пляжна зона</div>
+              <div class="div__count-filter">1</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Масаж для пар</div>
+              <div class="div__count-filter">1</div>
+            </div>
+          </label>
+        </div>
+
+        <div class="div__filter-item">
+          <div class="div__filter-text_bold">
+            Політика скасування
+          </div>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Безкоштовне скасування</div>
+              <div class="div__count-filter">15</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Бронювання без кредитної картки</div>
+              <div class="div__count-filter">6</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Без передоплати</div>
+              <div class="div__count-filter">19</div>
+            </div>
+          </label>
+        </div>
+
+        <div class="div__filter-item">
+          <div class="div__filter-text_bold">
+            Харчування
+          </div>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">З власною кухнею</div>
+              <div class="div__count-filter">24</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Сніданок включено</div>
+              <div class="div__count-filter">53</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Сніданок і вечерю включено</div>
+              <div class="div__count-filter">3</div>
+            </div>
+          </label>
+        </div>
+
+        <div class="div__filter-item">
+          <div class="div__filter-text_bold">
+            Помешкання повністю
+          </div>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Приватні помешкання / апартаменти повністю</div>
+              <div class="div__count-filter">20</div>
+            </div>
+          </label>
+        </div>
+
+        <div class="div__filter-item">
+          <div class="div__filter-text_bold">
+            Тип помешкання
+          </div>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Готелі</div>
+              <div class="div__count-filter">78</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Апартаменти</div>
+              <div class="div__count-filter">7</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Гостьові будинки</div>
+              <div class="div__count-filter">7</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Курортні готелі</div>
+              <div class="div__count-filter">4</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Лоджі</div>
+              <div class="div__count-filter">2</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Заміські будинки</div>
+              <div class="div__count-filter">1</div>
+            </div>
+          </label>
+        </div>
+
+        <div class="div__filter-item">
+          <div class="div__filter-text_bold">
+            Тип ліжка
+          </div>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Два односпальні ліжка</div>
+              <div class="div__count-filter">48</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Двоспальне ліжко</div>
+              <div class="div__count-filter">80</div>
+            </div>
+          </label>
+        </div>
+
+        <div class="div__filter-item">
+          <div class="div__filter-text_bold">
+            Оцінка гостей
+          </div>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Чудово: 9+</div>
+              <div class="div__count-filter">40</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Дуже добре: 8+</div>
+              <div class="div__count-filter">88</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Добре: 7+</div>
+              <div class="div__count-filter">94</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Досить добре: 6+</div>
+              <div class="div__count-filter">95</div>
+            </div>
+          </label>
+        </div>
+
+        <div class="div__filter-item">
+          <div class="div__filter-text_bold">
+            Зручності
+          </div>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Безкоштовний Wi-Fi</div>
+              <div class="div__count-filter">91</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Оздоровчий спа-центр</div>
+              <div class="div__count-filter">25</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Автостоянка</div>
+              <div class="div__count-filter">91</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Басейн</div>
+              <div class="div__count-filter">50</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Номери для некурців</div>
+              <div class="div__count-filter">89</div>
+            </div>
+          </label>
+        </div>
+
+        <div class="div__filter-item">
+          <div class="div__filter-text_bold">
+            Особисті ванні кімнати
+          </div>
+          <div class="div__search-text_normal">Ванні кімнати</div>
+        </div>
+
+        <div class="div__filter-item">
+          <div class="div__filter-text_bold">
+            Зручності у номері
+          </div>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Кухня/міні-кухня</div>
+              <div class="div__count-filter">24</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Окрема ванна кімната</div>
+              <div class="div__count-filter">84</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Є місце для роботи за ноутбуком</div>
+              <div class="div__count-filter">42</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Ванна</div>
+              <div class="div__count-filter">22</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Тераса</div>
+              <div class="div__count-filter">19</div>
+            </div>
+          </label>
+        </div>
+
+        <div class="div__filter-item">
+          <div class="div__filter-text_bold">
+            Район
+          </div>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Улюблений район гостей</div>
+              <div class="div__count-filter">38</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Поляниця</div>
+              <div class="div__count-filter">20</div>
+            </div>
+          </label>
+        </div>
+
+        <div class="div__filter-item">
+          <div class="div__filter-text_bold">
+            Мережі
+          </div>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Ribas Hotels Group</div>
+              <div class="div__count-filter">2</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Radisson Blu</div>
+              <div class="div__count-filter">1</div>
+            </div>
+          </label>
+        </div>
+
+        <div class="div__filter-item">
+          <div class="div__filter-text_bold">
+            Зручності у помешканні для осіб з інвалідністю
+          </div>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Пристосовано для гостей на інвалідному візку</div>
+              <div class="div__count-filter">4</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Туалет з поручнями</div>
+              <div class="div__count-filter">2</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Низький умивальник</div>
+              <div class="div__count-filter">1</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Вказівки шрифтом Брайля</div>
+              <div class="div__count-filter">1</div>
+            </div>
+          </label>
+        </div>
+
+        <div class="div__filter-item-end">
+          <div class="div__filter-text_bold">
+            Зручності для осіб з інвалідністю
+          </div>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Приміщення повністю знаходиться на першому поверсі</div>
+              <div class="div__count-filter">16</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">На вищі поверхи можна піднятися на ліфті</div>
+              <div class="div__count-filter">23</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Приміщення придатне для гостей в інвалідних візках</div>
+              <div class="div__count-filter">5</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Туалет з поручнями</div>
+              <div class="div__count-filter">2</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Ванна з поручнями</div>
+              <div class="div__count-filter">2</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Безбар'єрна душова</div>
+              <div class="div__count-filter">6</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Душ без піддону</div>
+              <div class="div__count-filter">24</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Високий унітаз</div>
+              <div class="div__count-filter">2</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Низький умивальник</div>
+              <div class="div__count-filter">5</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Аварійний шнур у ванній кімнаті</div>
+              <div class="div__count-filter">3</div>
+            </div>
+          </label>
+          <label class="label__checkbox">
+            <input class="input__checkbox" type="checkbox"/>
+            <span class="span__checkbox"></span>
+            <div class="div__name-count-filter">
+              <div class="div__name-filter">Стілець для душа</div>
+              <div class="div__count-filter">2</div>
+            </div>
+          </label>
+        </div>
+
+      </div>
+    </div>
+    <div class="div_right">
+
+    </div>
+  </div>
+</body>
