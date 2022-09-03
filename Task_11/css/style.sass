@@ -1,16 +1,21 @@
+@import 'mixins'
+$color-dark-blue-hover: #00487a
 $color-dark-blue: #003580 
 $color-light-blue: #1f4e90
 $color-white-blue: #f0f7fc
 $color-white: #fff
 $color-transparent: transparent
-$color-ogange: #febb02
+$color-yellow: #febb02
+$color-light-orange: #fff0e0
+$color-orange: #ff8000 
+$color-orange-bright: #BC5B01
+$color-dark-orange: #923e01
 $color-blue: #0071c2
 $color-black: #000000
 $color-light-gray: lightgray
 $color-gray: #949494
-$color-filter-text: #262626
-$max-width: 1100px
-$min-width: 1000px
+$color-dark-gray: #262626
+$width-right: 1100px
 
 body
     font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif
@@ -26,7 +31,7 @@ body
 
 .div__top-content
     width: 78%
-    max-width: $max-width
+    width: $width-right
     margin: auto
     display: flex
     flex-flow: row
@@ -108,8 +113,7 @@ body
 
 .div__category
     width: 78%
-    min-width: $min-width
-    max-width: $max-width
+    width: $width-right
     margin: auto
     padding-left: 5px
     display: flex
@@ -119,8 +123,7 @@ body
 
 .div__main
     width: 78%
-    min-width: $min-width
-    max-width: $max-width
+    width: $width-right
     margin: auto
     padding-left: 5px
 
@@ -135,12 +138,12 @@ body
     font-size: 12px
     cursor: default
 
-.div__text
-    font-size: 13px
-    margin: 0 5px
-    font-weight: bold
-    cursor: default
-
+.svg__category
+    margin: 2px
+    width: 16px
+    height: 16px
+    fill: $color-dark-gray
+    
 // ----------------------Left----------------------
 
 .div_left
@@ -151,7 +154,7 @@ body
 .div__search
     width: 100%
     aspect-ratio: 2 / 3
-    background-color: $color-ogange
+    background-color: $color-yellow
     border-radius: 3px
     display: flex
     flex-flow: column
@@ -492,3 +495,254 @@ body
     &:hover
         background-color: #00487a
 
+.div__sort-bar
+    width: 100%
+    display: flex
+    flex-flow: row
+
+.div__sort-popularity
+    display: flex
+    flex: auto
+    align-items: center
+    justify-content: center
+    background-color: $color-blue
+    color: $color-white
+    margin: 10px 0
+    padding-block: 8px
+    border: none
+    border-radius: 3px 0 0 3px
+    font-size: 13px
+    cursor: pointer
+
+.div__sort-button
+    @include mixin-button-sort
+    flex: auto
+
+.div__sort-drop-down
+    @include mixin-button-sort
+    border-radius: 0 3px 3px 0
+
+.svg__sort
+    width: 24px
+    height: 16px
+    padding: 10px
+    fill: $color-blue
+
+.div__error
+    display: flex
+    flex-flow: row
+    border: 1px solid $color-orange
+    border-radius: 3px
+    background-color: $color-light-orange
+    padding: 5px
+
+.svg__error
+    width: 10%
+    height: 20px
+    margin: 10px 5px
+    fill: $color-dark-orange
+
+.div__main-error
+    display: flex
+    flex-flow: column
+    padding: 5px
+
+.div__name-error
+    margin: 5px
+    font-weight: bold
+    font-size: 16px
+
+.div__text-error
+    margin: 5px
+
+.div__items
+    display: flex
+    flex-flow: column
+
+.div__item
+    margin-block: 10px
+    padding: 10px
+    border: 1px solid $color-light-gray
+    border-radius: 3px
+
+.img__item-image
+    margin: 5px
+    border-radius: 3px
+    cursor: pointer
+
+.svg__item-like
+    width: 25px
+    height: 25px
+    position: absolute
+    margin: -80px 0 0 80px
+    stroke: $color-white
+    stroke-width: 8px
+    filter: drop-shadow(0 2px 1.5px rgba(0,0,0,.5))
+    fill: rgba(0,0,0,.2)
+    cursor: pointer
+    &:hover
+        fill: rgba(0,0,0,.5)
+
+.div__item-content
+    display: flex
+    flex-flow: row
+
+.div__item-image
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 27%
+
+.div__item-content_full
+    margin-left: 10px
+    width: 73%
+    display: flex
+    flex-flow: column
+
+.div__item-content_top
+    display: flex
+    flex-flow: row
+
+.div__item-content_bottom
+    padding-block: 10px 
+    display: flex
+    flex-flow: row
+
+.div__item-content_left
+    width: 70%
+    margin-top: 5px
+    display: flex
+    flex-flow: column
+
+.div__item-name-row
+    display: flex
+    flex-flow: row
+    height: 30px
+
+.div__item-name
+    font-weight: bold
+    font-size: 20px
+    cursor: pointer
+    color: $color-blue
+    &:hover
+        color: $color-orange-bright
+
+.svg__preferred-badge
+    width: 30px
+    margin: 7px
+
+.div__item-address
+    display: flex
+    flex-flow: row
+
+.div__item-address span
+    font-weight: bold
+    color: $color-gray
+    margin-inline: 5px
+    &::after
+        content: "."
+    
+.div__addres-text
+    font-weight: 500
+    font-size: 12px
+    margin: 3px 0
+    text-decoration: underline
+    color: $color-blue
+    cursor: pointer
+
+.div__addres-distance
+    font-size: 12px
+    margin-block: 5px
+
+.div__item-content_right
+    width: 30%
+    display: flex
+    flex-flow: column
+    align-items: flex-end
+
+.div__review-score
+    display: flex
+    flex-flow: row
+    cursor: pointer
+
+.div__item-rating
+    display: flex
+    flex-flow: column
+
+.div__item-score
+    font-size: 16px
+    font-weight: 500
+    color: $color-dark-gray
+
+.div__item-reviews
+    margin-left: auto
+    font-size: 12px
+    color: $color-gray
+
+.div__item-grade
+    width: 32px
+    height: 32px
+    margin: 5px
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $color-dark-blue
+    color: $color-white
+    font-size: 16px
+    font-weight: bold
+    border-radius: 5px 5px 5px 0
+
+.div__item-location
+    font-size: 14px
+    font-weight: bold
+    color: $color-blue
+    cursor: pointer
+    &:hover
+        text-decoration: underline
+
+.div_item-description
+    padding: 0 10px
+    border: solid
+    border-width: 0 0 0 2px
+    border-color: $color-light-gray
+
+.div__name-reccomended
+    padding-block: 2px
+    font-weight: bold
+    font-size: 12px
+
+.div__reccomended
+    padding-block: 2px
+    font-size: 12px
+
+.div__item-text-gray
+    color: $color-gray
+    padding-block: 2px
+    font-size: 12px
+
+.div__item-price
+    font-size: 20px
+    font-weight: 500
+    color: $color-dark-gray
+
+.div__item-button-buy
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 10px
+    padding: 5px 10px
+    border-radius: 3px
+    color: $color-white
+    background-color: $color-blue
+    cursor: pointer
+    &:hover
+        background-color: $color-dark-blue-hover
+
+.div__text-button-buy
+    width: 140px
+    font-weight: 500
+
+.svg__item-button-buy
+    width: 16px
+    height: 16px
+    fill: $color-white
