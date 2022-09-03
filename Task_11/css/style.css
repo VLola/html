@@ -12,7 +12,6 @@ body {
 
 .div__top-content {
   width: 78%;
-  width: 1100px;
   margin: auto;
   display: flex;
   flex-flow: row;
@@ -105,7 +104,6 @@ body {
 }
 
 .div__category {
-  width: 78%;
   width: 1100px;
   margin: auto;
   padding-left: 5px;
@@ -116,10 +114,25 @@ body {
 }
 
 .div__main {
-  width: 78%;
   width: 1100px;
   margin: auto;
   padding-left: 5px;
+  display: flex;
+  flex-flow: row;
+}
+
+.div_left {
+  display: flex;
+  flex-flow: column;
+  width: 24%;
+  margin-right: 10px;
+}
+
+.div_right {
+  display: flex;
+  flex-flow: column;
+  width: 74%;
+  margin-left: 10px;
 }
 
 .div__text_blue {
@@ -140,12 +153,6 @@ body {
   width: 16px;
   height: 16px;
   fill: #262626;
-}
-
-.div_left {
-  display: grid;
-  width: 24%;
-  float: left;
 }
 
 .div__search {
@@ -499,17 +506,6 @@ body {
   border-radius: 3px;
 }
 
-.div__filter-popular_end {
-  width: 100px;
-  height: 2000px;
-}
-
-.div_right {
-  display: grid;
-  width: 74%;
-  float: right;
-}
-
 .div_right-top {
   display: flex;
   flex-flow: row;
@@ -648,7 +644,7 @@ body {
 }
 
 .div__item {
-  margin-block: 10px;
+  margin-block: 7px;
   padding: 10px;
   border: 1px solid lightgray;
   border-radius: 3px;
@@ -687,6 +683,25 @@ body {
   width: 27%;
 }
 
+.div__item-breakfast {
+  position: absolute;
+  padding: 5px 10px;
+  margin: 0 115px 160px 0;
+  background-color: #006607;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 3px 3px 3px 0;
+}
+.div__item-breakfast::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: -8px;
+  border: 8px solid transparent;
+  border-right: 8px solid #006607;
+}
+
 .div__item-content_full {
   margin-left: 10px;
   width: 73%;
@@ -700,16 +715,32 @@ body {
 }
 
 .div__item-content_bottom {
-  padding-block: 10px;
+  padding-top: 5px;
   display: flex;
   flex-flow: row;
 }
 
 .div__item-content_left {
-  width: 70%;
+  width: 65%;
   margin-top: 5px;
   display: flex;
   flex-flow: column;
+}
+
+.div__item-content_top .div__item-content_right {
+  width: 35%;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  justify-content: start;
+}
+
+.div__item-content_bottom .div__item-content_right {
+  width: 35%;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .div__item-name-row {
@@ -719,6 +750,7 @@ body {
 }
 
 .div__item-name {
+  margin-right: 5px;
   font-weight: bold;
   font-size: 20px;
   cursor: pointer;
@@ -728,9 +760,23 @@ body {
   color: #BC5B01;
 }
 
-.svg__preferred-badge {
-  width: 30px;
-  margin: 7px;
+.svg__preferred-badge_bg-orange {
+  background-color: #febb02;
+  margin: auto 1px;
+}
+
+.svg__preferred-badge_fill-orange {
+  fill: #febb02;
+  margin: auto 1px;
+}
+
+.div_item-vip {
+  height: 16px;
+  border: 1px solid #949494;
+  font-size: 12px;
+  margin: auto 5px;
+  padding: 2px 4px;
+  border-radius: 2px;
 }
 
 .div__item-address {
@@ -759,13 +805,6 @@ body {
 .div__addres-distance {
   font-size: 12px;
   margin-block: 5px;
-}
-
-.div__item-content_right {
-  width: 30%;
-  display: flex;
-  flex-flow: column;
-  align-items: flex-end;
 }
 
 .div__review-score {
@@ -815,6 +854,33 @@ body {
   text-decoration: underline;
 }
 
+.div__item-eco {
+  display: flex;
+  flex-flow: row;
+  margin-bottom: 5px;
+}
+
+.div__item-text-eco {
+  font-size: 12px;
+}
+
+.svg__item-eco {
+  fill: #262626;
+  margin-right: 5px;
+}
+
+.div__item-seassonal-offer {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fff;
+  background-color: #008009;
+  font-size: 12px;
+  margin-bottom: 5px;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
 .div_item-description {
   padding: 0 10px;
   border: solid;
@@ -826,6 +892,26 @@ body {
   padding-block: 2px;
   font-weight: bold;
   font-size: 12px;
+}
+
+.div__name-reccomended-green {
+  padding-block: 2px;
+  font-weight: bold;
+  font-size: 12px;
+  color: #008009;
+}
+
+.div__name-reccomended_green-normal {
+  padding-block: 2px;
+  font-size: 12px;
+  color: #008009;
+}
+
+.div__name-reccomended-red {
+  padding-block: 2px;
+  font-weight: bold;
+  font-size: 12px;
+  color: #c00;
 }
 
 .div__reccomended {
@@ -843,6 +929,15 @@ body {
   font-size: 20px;
   font-weight: 500;
   color: #262626;
+}
+
+.div_item-old-price {
+  position: absolute;
+  margin: -18px 0 0 -65px;
+  color: #c00;
+  font-weight: normal;
+  font-size: 12px;
+  text-decoration: line-through;
 }
 
 .div__item-button-buy {
@@ -869,4 +964,105 @@ body {
   width: 16px;
   height: 16px;
   fill: #fff;
+}
+
+.div__footer_blue {
+  background-color: #003580;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  margin-block: 1px;
+  overflow-x: hidden;
+}
+
+.div__footer-content {
+  min-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 78%;
+  margin: auto;
+  padding: 10px 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.div__footer_white {
+  min-width: 600px;
+  display: flex;
+  width: 78%;
+  margin: auto;
+  padding: 10px 0;
+}
+
+.div__text_white {
+  font-weight: 500;
+  text-decoration: underline;
+  color: #fff;
+  margin: 5px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.div__column-content {
+  width: 20%;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.div__footer-text_blue {
+  margin: 5px;
+  color: #0071c2;
+  font-size: 13px;
+  cursor: pointer;
+}
+.div__footer-text_blue:hover {
+  color: #BC5B01;
+}
+
+.div__login-extra {
+  margin: 20px;
+  color: #0071c2;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.div__login-extra:hover {
+  color: #BC5B01;
+}
+
+.div__foter-text {
+  padding: 20px;
+  width: 78%;
+  margin: auto;
+  font-size: 11px;
+}
+
+.div__foter-text-center {
+  font-size: 12px;
+  padding: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  color: #949494;
+}
+
+.div__footer-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+.div__footer-logos img {
+  padding: 15px;
 }/*# sourceMappingURL=style.css.map */

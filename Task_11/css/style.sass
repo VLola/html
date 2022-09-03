@@ -15,7 +15,11 @@ $color-black: #000000
 $color-light-gray: lightgray
 $color-gray: #949494
 $color-dark-gray: #262626
-$width-right: 1100px
+$color-dark-green: #006607
+$color-green: #008009
+$color-red: #c00
+$width-main: 1100px
+$min-width-footer: 600px
 
 body
     font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif
@@ -31,7 +35,6 @@ body
 
 .div__top-content
     width: 78%
-    width: $width-right
     margin: auto
     display: flex
     flex-flow: row
@@ -112,8 +115,7 @@ body
         background-color: $color-white-blue
 
 .div__category
-    width: 78%
-    width: $width-right
+    width: $width-main
     margin: auto
     padding-left: 5px
     display: flex
@@ -122,10 +124,23 @@ body
     padding-bottom: 5px
 
 .div__main
-    width: 78%
-    width: $width-right
+    width: $width-main
     margin: auto
     padding-left: 5px
+    display: flex
+    flex-flow: row
+
+.div_left
+    display: flex
+    flex-flow: column
+    width: 24%
+    margin-right: 10px
+
+.div_right
+    display: flex
+    flex-flow: column
+    width: 74%
+    margin-left: 10px
 
 .div__text_blue
     margin: 1px 0
@@ -145,11 +160,6 @@ body
     fill: $color-dark-gray
     
 // ----------------------Left----------------------
-
-.div_left
-    display: grid
-    width: 24%
-    float: left
 
 .div__search
     width: 100%
@@ -453,16 +463,7 @@ body
     border: 1px solid $color-light-gray
     border-radius: 3px
 
-.div__filter-popular_end
-    width: 100px
-    height: 2000px
-
 // ----------------------Right----------------------
-
-.div_right
-    display: grid
-    width: 74%
-    float: right
 
 .div_right-top
     display: flex
@@ -560,7 +561,7 @@ body
     flex-flow: column
 
 .div__item
-    margin-block: 10px
+    margin-block: 7px
     padding: 10px
     border: 1px solid $color-light-gray
     border-radius: 3px
@@ -593,6 +594,23 @@ body
     justify-content: center
     width: 27%
 
+.div__item-breakfast
+    position: absolute
+    padding: 5px 10px
+    margin: 0 115px 160px 0
+    background-color: $color-dark-green
+    color: $color-white
+    font-size: 12px
+    font-weight: 500
+    border-radius: 3px 3px 3px 0
+    &::before
+        content: ""
+        position: absolute
+        bottom: -8px
+        left:  -8px
+        border: 8px solid transparent
+        border-right: 8px solid $color-dark-green
+
 .div__item-content_full
     margin-left: 10px
     width: 73%
@@ -604,15 +622,29 @@ body
     flex-flow: row
 
 .div__item-content_bottom
-    padding-block: 10px 
+    padding-top: 5px 
     display: flex
     flex-flow: row
 
 .div__item-content_left
-    width: 70%
+    width: 65%
     margin-top: 5px
     display: flex
     flex-flow: column
+
+.div__item-content_top .div__item-content_right
+    width: 35%
+    display: flex
+    flex-flow: column
+    align-items: flex-end
+    justify-content: start
+
+.div__item-content_bottom .div__item-content_right
+    width: 35%
+    display: flex
+    flex-flow: column
+    align-items: flex-end
+    justify-content: center
 
 .div__item-name-row
     display: flex
@@ -620,6 +652,7 @@ body
     height: 30px
 
 .div__item-name
+    margin-right: 5px
     font-weight: bold
     font-size: 20px
     cursor: pointer
@@ -627,9 +660,21 @@ body
     &:hover
         color: $color-orange-bright
 
-.svg__preferred-badge
-    width: 30px
-    margin: 7px
+.svg__preferred-badge_bg-orange
+    background-color: #febb02 
+    margin: auto 1px
+
+.svg__preferred-badge_fill-orange
+    fill: #febb02 
+    margin: auto 1px
+
+.div_item-vip
+    height: 16px
+    border: 1px solid $color-gray
+    font-size: 12px
+    margin: auto 5px
+    padding: 2px 4px
+    border-radius: 2px
 
 .div__item-address
     display: flex
@@ -653,12 +698,6 @@ body
 .div__addres-distance
     font-size: 12px
     margin-block: 5px
-
-.div__item-content_right
-    width: 30%
-    display: flex
-    flex-flow: column
-    align-items: flex-end
 
 .div__review-score
     display: flex
@@ -700,6 +739,27 @@ body
     &:hover
         text-decoration: underline
 
+.div__item-eco
+    display: flex
+    flex-flow: row
+    margin-bottom: 5px
+
+.div__item-text-eco
+    font-size: 12px
+
+.svg__item-eco
+    fill: $color-dark-gray
+    margin-right: 5px
+
+.div__item-seassonal-offer
+    width: fit-content
+    color: $color-white
+    background-color: $color-green
+    font-size: 12px
+    margin-bottom: 5px
+    padding: 2px 5px
+    border-radius: 3px
+
 .div_item-description
     padding: 0 10px
     border: solid
@@ -710,6 +770,23 @@ body
     padding-block: 2px
     font-weight: bold
     font-size: 12px
+
+.div__name-reccomended-green
+    padding-block: 2px
+    font-weight: bold
+    font-size: 12px
+    color: $color-green
+
+.div__name-reccomended_green-normal
+    padding-block: 2px
+    font-size: 12px
+    color: $color-green
+
+.div__name-reccomended-red
+    padding-block: 2px
+    font-weight: bold
+    font-size: 12px
+    color: $color-red
 
 .div__reccomended
     padding-block: 2px
@@ -724,6 +801,14 @@ body
     font-size: 20px
     font-weight: 500
     color: $color-dark-gray
+
+.div_item-old-price
+    position: absolute
+    margin: -18px 0 0 -65px
+    color: $color-red
+    font-weight: normal
+    font-size: 12px
+    text-decoration: line-through
 
 .div__item-button-buy
     display: flex
@@ -746,3 +831,89 @@ body
     width: 16px
     height: 16px
     fill: $color-white
+
+// ------------------------Footer-------------------------
+
+.div__footer_blue
+    background-color: $color-dark-blue
+    display: flex
+    flex-flow: column
+    flex-wrap: wrap
+    margin-block: 1px
+    overflow-x: hidden
+
+.div__footer-content
+    min-width: $min-width-footer
+    display: flex
+    flex-wrap: wrap
+    width: 78%
+    margin: auto
+    padding: 10px 0
+    align-items: center
+    justify-content: center
+
+.div__footer_white
+    min-width: $min-width-footer
+    display: flex
+    width: 78%
+    margin: auto
+    padding: 10px 0
+
+.div__text_white
+    font-weight: 500
+    text-decoration: underline
+    color: $color-white
+    margin: 5px
+    white-space: nowrap
+    cursor: pointer
+
+.div__column-content
+    width: 20%
+    display: flex
+    flex-flow: column
+    align-items: flex-start
+    justify-content: flex-start
+
+.div__footer-text_blue
+    margin: 5px
+    color: $color-blue
+    font-size: 13px
+    cursor: pointer
+    &:hover
+        color: $color-orange-bright
+
+.div__login-extra
+    margin: 20px
+    color: $color-blue
+    font-size: 16px
+    font-weight: bold
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    &:hover
+        color: $color-orange-bright
+
+.div__foter-text
+    padding: 20px
+    width: 78%
+    margin: auto
+    font-size: 11px
+
+.div__foter-text-center
+    font-size: 12px
+    padding: 20px
+    width: fit-content
+    margin: auto
+    color: $color-gray
+
+.div__footer-logos
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+    width: fit-content
+    margin: auto
+
+.div__footer-logos img
+    padding: 15px
