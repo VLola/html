@@ -124,14 +124,14 @@ body {
 .div_left {
   display: flex;
   flex-flow: column;
-  width: 24%;
+  flex: 25%;
   margin-right: 10px;
 }
 
 .div_right {
   display: flex;
   flex-flow: column;
-  width: 74%;
+  flex: 75%;
   margin-left: 10px;
 }
 
@@ -156,8 +156,6 @@ body {
 }
 
 .div__search {
-  width: 100%;
-  aspect-ratio: 2/3;
   background-color: #febb02;
   border-radius: 3px;
   display: flex;
@@ -224,7 +222,7 @@ body {
 .button__search {
   background-color: #0071c2;
   color: #fff;
-  margin: 0 15px;
+  margin: 0 15px 15px 15px;
   padding-block: 16px;
   border: none;
   border-radius: 3px;
