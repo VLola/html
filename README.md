@@ -1,3 +1,7 @@
+# Task 18.
+
+![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_18/images/main.png)
+
 # Task 17.
 
 ![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_17/images/main.png)
