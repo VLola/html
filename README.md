@@ -1,3 +1,9 @@
+# Task 19.
+
+![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_19/images/login.png)
+
+![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_19/images/repassword.png)
+
 # Task 18.
 
 ![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_18/images/main.png)
