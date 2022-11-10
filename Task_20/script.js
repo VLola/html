@@ -4,6 +4,7 @@ function SendFile(){
     fd.append('file', files);
 
     $.ajax({
+        // url: 'https://localhost:7259/File/Add',
         url: 'http://vbu011valentyn-001-site1.htempurl.com/File/Add',
         type: 'post',
         data: fd,
@@ -24,10 +25,12 @@ function GetAll(){
 
     let dateStart = $("#date__start").val();
     let dateEnd = $("#date__end").val();
-    $.get("http://vbu011valentyn-001-site1.htempurl.com/File/GetAll")
+    // $.get("https://localhost:7259/File/GetAll?start=" + dateStart + "&end=" + dateEnd)
+    $.get("http://vbu011valentyn-001-site1.htempurl.com/File/GetAll?start=" + dateStart + "&end=" + dateEnd)
     .done((data) =>{
         for (const iterator of data) {
-            AddItem(iterator);
+            AddItem(iterator.name, iterator.time, iterator.size);
+            // console.log(iterator);
         }
     })
     .fail(() =>{
@@ -37,6 +40,7 @@ function GetAll(){
 
 function Delete(name){
     $.ajax({
+        // url: "https://localhost:7259/File/Delete?name=" + name,
         url: "http://vbu011valentyn-001-site1.htempurl.com/File/Delete?name=" + name,
         type: "DELETE",
         error:(function(data) {
@@ -51,14 +55,21 @@ function Delete(name){
 
 function GetFile(name){
     $.ajax({
+        // url: "https://localhost:7259/File/GetFile?name=" + name,
         url: "http://vbu011valentyn-001-site1.htempurl.com/File/GetFile?name=" + name,
         type: "GET",
         error:(function(data) {
             console.log(data);
         }),
         success: function(response){
-
-            var bb = new Blob([response ], { type: 'text/plain' });
+            
+            let index = name.lastIndexOf('.') + 1;
+            let extension = name.substring(index);
+            let typefile = "text/plain";
+            if(extension == "png"){
+                typefile = "image/png";
+            }
+            var bb = new Blob([response], { type: typefile });
             var a = document.createElement('a');
             a.download = name;
             a.href = window.URL.createObjectURL(bb);
@@ -68,13 +79,14 @@ function GetFile(name){
 }
 
 let count = 0;
-function AddItem(name) {
+function AddItem(name, dateTime, sizeFile) {
+    let time = new Date(dateTime).toLocaleString();
     count++;
     let index = name.lastIndexOf('.') + 1;
-    let roz = name.substring(index);
+    let extension = name.substring(index);
     let imgSrc = `images/doc.svg`;
-    if(roz == "avi" || roz == "bmp" || roz == "cad" || roz == "dll" || roz == "doc" || roz == "eps" || roz == "jpg" || roz == "pdf" || roz == "png" || roz == "ps" || roz == "psd" || roz == "sql" || roz == "txt" || roz == "zip"){
-        imgSrc = `images/${roz}.svg`;
+    if(extension == "avi" || extension == "bmp" || extension == "cad" || extension == "dll" || extension == "doc" || extension == "eps" || extension == "jpg" || extension == "pdf" || extension == "png" || extension == "ps" || extension == "psd" || extension == "sql" || extension == "txt" || extension == "zip"){
+        imgSrc = `images/${extension}.svg`;
     }
 
     let box = $("<div></div>").addClass("file-man-box");
@@ -91,7 +103,9 @@ function AddItem(name) {
     let title = $("<div></div>").addClass("file-man-title");
     let titleText = $("<h5></h5>").addClass("mb-0 text-overflow").text(`${name}`);
     let size = $("<p></p>").addClass("mb-0");
-    let sizeText = $("<small></small>").text("55 kb");
+    let sizeText = $("<small></small>").text(`${sizeFile} kb`);
+    let elemDate = $("<p></p>").addClass("mb-0");
+    let elemDateText = $("<small></small>").text(`${time}`);
 
     box.append(close);
     close.append(closeImg);
@@ -103,24 +117,21 @@ function AddItem(name) {
     title.append(titleText);
     box.append(size);
     size.append(sizeText);
+    box.append(elemDate);
+    elemDate.append(elemDateText);
     
     $("#file__manager").append(box);
 
-
-    // let elem = $(`<div class='file-man-box'><a class='file-close' id='delete-${count}'><i class='fa fa-times-circle'></i></a><div class='file-img-box'><img src='${imgSrc}' alt='icon'></div><a href='#' class='file-download'><i class='fa fa-download'></i></a><div class='file-man-title'><h5 class='mb-0 text-overflow'>${name}</h5><p class='mb-0'><small>568.8 kb</small></p></div></div>`);
-    
-    // $("#file__manager").append(elem);
-
-    // $(`#delete-${count}`).click(function() {
-    //     Delete(name);
-    // });
 }
 
 document.addEventListener('DOMContentLoaded', (e) => {
     $("#button__load").click(function() {
         SendFile();
     });
-    $("#button__show").click(function() {
+    $("#date__start").change(function() {
+        GetAll();
+    });
+    $("#date__end").change(function() {
         GetAll();
     });
 

@@ -8,7 +8,8 @@ body{
     background-color: #fff;
 }
 
-.file-man-box {     
+.file-man-box {
+    width: 220px;
     padding: 20px;
     border: 1px solid #e3eaef;
     border-radius: 5px;
@@ -49,7 +50,7 @@ body{
 }
 
 .file-man-box .file-man-title {
-    padding-right: 25px
+    padding-right: 50px
 }
 
 .file-man-box:hover {
