@@ -57,23 +57,20 @@ function GetFile(name){
     $.ajax({
         // url: "https://localhost:7259/File/GetFile?name=" + name,
         url: "http://vbu011valentyn-001-site1.htempurl.com/File/GetFile?name=" + name,
-        type: "GET",
+        method: "GET",
+        xhrFields:{
+            responseType: 'blob'
+        },
         error:(function(data) {
             console.log(data);
         }),
-        success: function(response){
-            
-            let index = name.lastIndexOf('.') + 1;
-            let extension = name.substring(index);
-            let typefile = "text/plain";
-            if(extension == "png"){
-                typefile = "image/png";
-            }
-            var bb = new Blob([response], { type: typefile });
+        success: function(data){
             var a = document.createElement('a');
+            let url = window.URL.createObjectURL(data);
+            a.href = url;
             a.download = name;
-            a.href = window.URL.createObjectURL(bb);
             a.click();
+            window.URL.revokeObjectURL(url);
         }
     });
 }
