@@ -1,3 +1,17 @@
+# Task 21.
+
+User:
+
+![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_21/images/user.png)
+
+Login:
+
+![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_21/images/login.png)
+
+Admin:
+
+![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_21/images/admin.png)
+
 # Task 20.
 
 ![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_20/images/main.png)
