@@ -260,7 +260,7 @@ function Registration(){
         });
     }
 }
-
+// Validate
 function Validate(password){
     if(ValidateEmail()){
         if(ValidatePassword(password)){
