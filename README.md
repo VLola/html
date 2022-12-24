@@ -1,3 +1,9 @@
+# Task 24.
+
+Написать свой компонент "Таймер".
+Вывести на сайте 3 таймера в ряд.
+Таймер должен принимать в атрибут стартовое время и идти от него к нулю.
+
 # Task 23.
 
 ![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_23/public/images/main.png)

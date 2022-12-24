@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Time{
+  font-size: 40px;
+};
