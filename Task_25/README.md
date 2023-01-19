@@ -1,6 +1,16 @@
-# Task 23.
 
-![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_23/public/images/main.png)
+# Task 25.
+
+1. npm install victory
+2. npm install @mui/material @emotion/react @emotion/styled
+
+## Main:
+
+![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_25/public/main.png)
+
+## Symbol detail:
+
+![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_25/public/symbol.png)
 
 # Getting Started with Create React App
 
