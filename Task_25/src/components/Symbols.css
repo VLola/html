@@ -1,0 +1,22 @@
+.div__symbols {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.div__flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+}
+.div__slider{
+  width: 50%;
+  margin-top: 2%;
+}
+input{
+  width: 50%;
+  font-size: x-large;
+}

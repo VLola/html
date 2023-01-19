@@ -1,3 +1,17 @@
+
+# Task 25.
+
+npm install victory
+npm install @mui/material @emotion/react @emotion/styled
+
+## Main:
+
+![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_25/public/main.png)
+
+## Symbol detail:
+
+![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_25/public/symbol.png)
+
 # Task 24.
 
 Написать свой компонент "Таймер".
