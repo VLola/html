@@ -1,8 +1,8 @@
 
 # Task 25.
 
-npm install victory
-npm install @mui/material @emotion/react @emotion/styled
+1. npm install victory
+2. npm install @mui/material @emotion/react @emotion/styled
 
 ## Main:
 
