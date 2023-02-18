@@ -1,64 +1,40 @@
+# Project 102.
 
-# Task 25.
+![Image text](https://raw.githubusercontent.com/VLola/html/master/Project_102/images/main.png)
 
-1. npm install victory
-2. npm install @mui/material @emotion/react @emotion/styled
-
-## Main:
-
-![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_25/public/main.png)
-
-## Symbol detail:
-
-![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_25/public/symbol.png)
-
-# Task 24.
-
-Написать свой компонент "Таймер".
-Вывести на сайте 3 таймера в ряд.
-Таймер должен принимать в атрибут стартовое время и идти от него к нулю.
-
-# Task 23.
-
-![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_23/public/images/main.png)
-
-# Task 22.
-
-![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_22/images/main.png)
-
-# Task 21.
+# Project 101.
 
 ## User:
 
-![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_21/images/user.png)
+![Image text](https://raw.githubusercontent.com/VLola/html/master/Project_101/images/user.png)
 
 ## Login:
 
-![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_21/images/login.png)
+![Image text](https://raw.githubusercontent.com/VLola/html/master/Project_101/images/login.png)
 
 ## Admin:
 
-![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_21/images/admin.png)
+![Image text](https://raw.githubusercontent.com/VLola/html/master/Project_101/images/admin.png)
 
-# Task 20.
+# Project 100.
 
-![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_20/images/main.png)
+![Image text](https://raw.githubusercontent.com/VLola/html/master/Project_100/images/main.png)
 
-# Task 19.
+# Project 99.
 
-![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_19/images/login.png)
+![Image text](https://raw.githubusercontent.com/VLola/html/master/Project_99/images/login.png)
 
-![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_19/images/repassword.png)
+![Image text](https://raw.githubusercontent.com/VLola/html/master/Project_99/images/repassword.png)
 
-# Task 18.
+# Project 98.
 
-![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_18/images/main.png)
+![Image text](https://raw.githubusercontent.com/VLola/html/master/Project_98/images/main.png)
 
-# Task 17.
+# Project 97.
 
-![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_17/images/main.png)
+![Image text](https://raw.githubusercontent.com/VLola/html/master/Project_97/images/main.png)
 
-# Task 13.
+# Project 93.
 
 1. Создать массив «Список покупок». Каждый элемент массива является объектом, который содержит название продукта, необходимое количество и куплен или нет. Написать несколько функций для работы с таким массивом.
     + Вывод всего списка на экран таким образом, чтобы сначала шли некупленные продукты, а потом – купленные.
@@ -82,50 +58,50 @@
     + Функция сортировки аудиторий по количеству мест.
     + Функция сортировки аудиторий по названию (по алфавиту).
 
-# Task 11.
+# Project 91.
 
-![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_11/images/main.png)
+![Image text](https://raw.githubusercontent.com/VLola/html/master/Project_91/images/main.png)
 
-# Task 10.
+# Project 90.
 
-![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_10/images/main.png)
+![Image text](https://raw.githubusercontent.com/VLola/html/master/Project_90/images/main.png)
 
-# Task 9.
+# Project 89.
 
-![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_09/images/main.png)
+![Image text](https://raw.githubusercontent.com/VLola/html/master/Project_89/images/main.png)
 
-# Task 7.
+# Project 87.
 
-![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_07/images/main.png)
+![Image text](https://raw.githubusercontent.com/VLola/html/master/Project_87/images/main.png)
 
 
-# Task 6.
+# Project 86.
 
-![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_06/images/main.png)
-
-___
-# Task 5.
-
-![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_05/images/main.png)
+![Image text](https://raw.githubusercontent.com/VLola/html/master/Project_86/images/main.png)
 
 ___
-# Task 4.
+# Project 85.
 
-![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_04/images/main.png)
-
-___
-# Task 3.
-
-![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_03/images/main.png)
+![Image text](https://raw.githubusercontent.com/VLola/html/master/Project_85/images/main.png)
 
 ___
-# Task 2.
+# Project 84.
 
-![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_02/images/main.png)
+![Image text](https://raw.githubusercontent.com/VLola/html/master/Project_84/images/main.png)
 
 ___
-# Task 1.
+# Project 83.
 
-![Image text](https://raw.githubusercontent.com/VLola/html/master/Task_01/images/main.png)
+![Image text](https://raw.githubusercontent.com/VLola/html/master/Project_83/images/main.png)
+
+___
+# Project 82.
+
+![Image text](https://raw.githubusercontent.com/VLola/html/master/Project_82/images/main.png)
+
+___
+# Project 81.
+
+![Image text](https://raw.githubusercontent.com/VLola/html/master/Project_81/images/main.png)
 
 ___
